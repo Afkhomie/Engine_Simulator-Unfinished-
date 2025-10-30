@@ -1,0 +1,232 @@
+1. CORE ENGINE SIMULATION
+
+✅ Real-time RPM calculation with physics-based acceleration
+✅ Torque curve simulation (varies by engine type)
+✅ Power output calculation (HP)
+✅ Speed calculation in km/h (based on gear ratios + wheel diameter)
+✅ Engine inertia modeling (different per engine type)
+✅ Rev limiter with hard cut
+✅ Idle RPM maintenance when throttle released
+
+2. ENGINE TYPES (4 Presets + Custom)
+
+✅ Inline-4 2.0L Turbo: 250 HP, 280 Nm, 7200 RPM redline
+✅ V6 3.5L NA: 300 HP, 380 Nm, 7000 RPM redline
+✅ V8 5.0L NA: 450 HP, 530 Nm, 7500 RPM redline
+✅ Diesel I4 2.0L: 180 HP, 420 Nm, 5000 RPM redline
+✅ Custom Engine Builder: Full parameter control
+
+3. TRANSMISSION SYSTEM
+
+✅ 6-speed manual transmission + Reverse gear
+✅ Fully customizable gear ratios (individual + final drive)
+✅ Neutral position (gear 0)
+✅ Clutch simulation (engaged/disengaged states)
+✅ Gear-specific load on engine
+✅ Real-time gear indicator display
+
+4. FORCED INDUCTION
+
+✅ Turbocharger simulation with RPM-based spool
+✅ Supercharger simulation (instant boost)
+✅ Adjustable boost pressure (0-25 PSI)
+✅ Boost multiplier on torque output
+✅ Real-time boost gauge
+
+5. FUEL SYSTEM
+
+✅ Fuel level tracking (percentage)
+✅ Real-time fuel consumption (L/h)
+✅ Fuel consumption varies by:
+
+Engine load (torque)
+RPM
+Engine type
+Fuel type
+
+
+✅ Fuel range estimation (km remaining)
+✅ Visual fuel bar with gradient
+✅ 4 fuel types: Regular (87), Premium (93), E85 (105), Diesel
+
+6. TEMPERATURE SIMULATION
+
+✅ Oil Temperature: Rises with throttle/RPM, cools passively
+✅ Coolant Temperature: Engine heat dissipation
+✅ Intake Air Temperature: Affected by boost pressure
+✅ All temperatures in °Celsius
+✅ Warning system for overheating
+
+7. ENGINE HEALTH & WEAR
+
+✅ Wear percentage tracking
+✅ Damage accumulation from:
+
+Overheating
+Over-revving (exceeding redline)
+High boost without proper fuel
+
+
+✅ Real-time warning box with alerts
+✅ Visual health indicators
+
+8. PERFORMANCE METRICS
+
+✅ 0-100 km/h timer: Automatic acceleration tracking
+✅ Quarter-mile timer: 402m performance measurement
+✅ Real-time torque display (Nm)
+✅ Real-time power display (HP)
+✅ Real-time boost display (PSI)
+
+9. KEYBOARD CONTROLS (Full Manual)
+
+✅ SPACE: Throttle (hold for acceleration)
+✅ B: Brake (deceleration)
+✅ SHIFT: Gear up
+✅ CTRL: Gear down
+✅ BACKSPACE: Clutch toggle
+✅ E: Start engine
+✅ Q: Stop engine
+✅ D: Switch to Dyno view
+✅ Prevent shifts without clutch (realistic)
+
+10. AUDIO ENGINE (Real-time Sound Synthesis)
+
+✅ Engine rumble: Low-frequency oscillator based on RPM
+✅ Exhaust note: Mid-frequency square wave (throttle-dependent)
+✅ Turbo whistle: High-frequency sine wave (boost-dependent)
+✅ Dynamic frequency based on cylinder count
+✅ Volume adjustable (0-100%)
+✅ Automatic audio context initialization
+
+11. VISUAL DISPLAYS
+
+✅ RPM Gauge: Large digital display + progress bar
+✅ Speed Gauge: km/h with progress bar
+✅ Power Gauge: HP display
+✅ Gear Indicator: Large animated display (R, N, 1-6)
+✅ Real-time RPM Graph: Scrolling history canvas
+✅ Fuel Bar: Visual percentage with gradient
+✅ All gauges update at 60 FPS
+
+12. DYNO PAGE (Performance Analysis)
+
+✅ Power Curve Graph: HP vs RPM visualization
+✅ Torque Curve Graph: Nm vs RPM visualization
+✅ Peak power identification with RPM
+✅ Peak torque identification with RPM
+✅ Redline display
+✅ Full canvas-based graphing system
+
+13. CUSTOM ENGINE BUILDER PAGE
+
+✅ Displacement: 0.5L - 10L (adjustable)
+✅ Cylinder Count: 1-16 cylinders
+✅ Idle RPM: 500-2000
+✅ Redline RPM: 3000-12000
+✅ Peak Torque: 50-1000 Nm (with RPM point)
+✅ Peak Power: 50-2000 HP (with RPM point)
+✅ Engine Inertia: 0.05-1.0
+✅ Fuel Base: 0.1-2.0 L/h
+✅ Save custom engine to active simulation
+
+14. TUNING FEATURES
+
+✅ Adjustable rev limiter (4000-9000 RPM)
+✅ Launch control toggle
+✅ Boost pressure adjustment
+✅ Volume control for audio
+✅ All settings apply in real-time
+
+15. SESSION TRACKING
+
+✅ Runtime: Total engine-on time (seconds)
+✅ Distance: Total distance traveled (km)
+✅ Reset function to clear all data
+✅ Persistent session across page switches
+
+16. UI/UX FEATURES
+
+✅ 4 Pages: Welcome, Simulator, Builder, Dyno
+✅ Glassmorphism design: Frosted glass panels
+✅ Dark mode: Always-on dark theme
+✅ Responsive layout: 3-column grid (controls | display | stats)
+✅ Scrollable panels: Left/right panels scroll independently
+✅ Animated backgrounds:
+
+Rotating gear (120s loop)
+Floating gradients
+Circuit-style aesthetic
+
+
+✅ Keyboard hint overlay: Always visible controls
+✅ Progress bars: Visual feedback on all gauges
+✅ Warning system: Color-coded alerts
+
+17. PHYSICS ENGINE
+
+✅ Delta-time based simulation (frame-rate independent)
+✅ Torque curve calculations (parabolic model)
+✅ Drivetrain load simulation
+✅ Clutch engagement physics
+✅ Boost lag for turbos
+✅ Wheel speed to vehicle speed conversion
+✅ Acceleration/deceleration curves
+✅ Brake force application
+
+18. METRIC UNITS (As Requested)
+
+✅ Speed: km/h
+✅ Torque: Nm (Newton-meters)
+✅ Fuel: Liters (L/h, L)
+✅ Temperature: °Celsius
+✅ Distance: km
+✅ EXCEPTIONS (as you wanted):
+
+Power: HP (horsepower)
+Boost: PSI (pounds per square inch)
+
+
+
+19. REALISTIC BEHAVIORS
+
+✅ Engine won't rev in neutral without load
+✅ Clutch must be pressed to shift
+✅ Rev limiter cuts fuel at redline
+✅ Turbo lag (boost builds with RPM)
+✅ Engine temperature rises/falls realistically
+✅ Fuel depletes based on actual power output
+✅ Wear accumulates over time
+
+20. PERFORMANCE OPTIMIZATIONS
+
+✅ Canvas rendering optimized
+✅ RequestAnimationFrame for smooth 60 FPS
+✅ Minimal DOM updates
+✅ Efficient audio synthesis
+✅ No external dependencies (pure vanilla JS)
+
+
+📊 TECHNICAL SPECS
+
+Lines of Code: ~1500+ (HTML + CSS + JS combined)
+Pages: 4 (Welcome, Simulator, Custom Builder, Dyno)
+Engine Configurations: 5 (4 presets + custom)
+Adjustable Parameters: 20+
+Real-time Metrics: 15+
+Keyboard Shortcuts: 8
+Audio Channels: 3 (engine, exhaust, turbo)
+Graph Types: 3 (RPM history, power curve, torque curve)
+
+
+🚀 WHAT'S ACTUALLY WORKING (MVP READY)
+✅ Full engine simulation with realistic physics
+✅ Complete manual transmission with clutch
+✅ Real-time sound synthesis
+✅ Performance tracking (0-100, 1/4 mile)
+✅ Custom engine builder
+✅ Dyno analysis graphs
+✅ All keyboard controls
+✅ Fuel consumption & temperature
+✅ Wear & damage system
+✅ Modern glassmorphic UI
